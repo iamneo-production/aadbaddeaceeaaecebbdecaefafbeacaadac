@@ -15,7 +15,7 @@ public class DBConnectionUtility
         DBConnectionUtility.mySqlDriver = "com.mysql.jdbc.Driver";
         DBConnectionUtility.URL = "jdbc:mysql://localhost:3306/employeedb123?useSSL=false";
         DBConnectionUtility.USERNAME = "root";
-        DBConnectionUtility.PASSWORD = "root";
+        DBConnectionUtility.PASSWORD = "examly";
     }
     
     public static Connection getConnection() throws Exception {
