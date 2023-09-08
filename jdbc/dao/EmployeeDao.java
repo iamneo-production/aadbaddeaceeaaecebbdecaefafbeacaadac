@@ -6,11 +6,11 @@ import java.sql.SQLException;
 import java.sql.PreparedStatement;
 import java.sql.Connection;
 import jdbc.utility.DBConnectionUtility;
-import com.LTIMindtree.ApplicationName.entity.Employee;
+import jdbc.entity.Employee;
 
 public class EmployeeDao
 {
-    public int insertEmployeeDetails(final Employee employeeObj) throws SQLException, ClassNotFoundException, DBConnectionUtilityException {
+    public int insertEmployeeDetails(final Employee employeeObj) throws SQLException, ClassNotFoundException {
         final Connection conn = DBConnectionUtility.getConnection();
         final String SQLQuery = "INSERT IGNORE INTO employee VALUES(?,?,?,?)";
         final PreparedStatement pStmt = conn.prepareStatement(SQLQuery);
