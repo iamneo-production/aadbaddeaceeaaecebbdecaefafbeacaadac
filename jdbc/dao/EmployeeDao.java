@@ -2,11 +2,10 @@ package jdbc.dao;
 
 
 import java.sql.ResultSet;
-import com.LTIMindtree.ApplicationName.utility.DBConnectionUtilityException;
 import java.sql.SQLException;
 import java.sql.PreparedStatement;
 import java.sql.Connection;
-import com.LTIMindtree.ApplicationName.utility.DBConnectionUtility;
+import jdbc.utility.DBConnectionUtility;
 import com.LTIMindtree.ApplicationName.entity.Employee;
 
 public class EmployeeDao

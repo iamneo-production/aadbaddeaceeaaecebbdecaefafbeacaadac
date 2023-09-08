@@ -1,9 +1,9 @@
 package jdbc.service;
 
-import com.LTIMindtree.ApplicationName.utility.DBConnectionUtilityException;
+
 import java.sql.SQLException;
-import com.LTIMindtree.ApplicationName.entity.Employee;
-import com.LTIMindtree.ApplicationName.dao.EmployeeDao;
+import jdbc.entity.Employee;
+import jdbc.dao.EmployeeDao;
 
 public class EmployeeService
 {

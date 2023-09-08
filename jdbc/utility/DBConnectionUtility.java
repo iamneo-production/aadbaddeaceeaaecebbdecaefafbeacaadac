@@ -18,7 +18,7 @@ public class DBConnectionUtility
         DBConnectionUtility.PASSWORD = "root";
     }
     
-    public static Connection getConnection() throws DBConnectionUtilityException {
+    public static Connection getConnection() throws Exception {
         Connection conn = null;
         try {
             Class.forName(DBConnectionUtility.mySqlDriver);
@@ -31,7 +31,7 @@ public class DBConnectionUtility
             }
         }
         catch (Exception e) {
-            throw new DBConnectionUtilityException("check configuration");
+            throw new Exception("check configuration");
         }
         return conn;
     }
