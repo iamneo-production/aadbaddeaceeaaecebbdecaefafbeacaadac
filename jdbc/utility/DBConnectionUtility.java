@@ -13,12 +13,29 @@ public class DBConnectionUtility
     
     static {
         DBConnectionUtility.mySqlDriver = "com.mysql.jdbc.Driver";
-        DBConnectionUtility.URL = "jdbc:mysql://localhost:3306/employeedb123?useSSL=false";
+        DBConnectionUtility.URL = "jdbc:mysql://localhost:3306/appDB?useSSL=false";
         DBConnectionUtility.USERNAME = "root";
         DBConnectionUtility.PASSWORD = "examly";
     }
     
-    public static Connection getConnection() throws Exception {
+    public static void main(String[] args)  {
+         Connection conn = null;
+        try {
+            Class.forName(DBConnectionUtility.mySqlDriver);
+            conn = DriverManager.getConnection(DBConnectionUtility.URL, DBConnectionUtility.USERNAME, DBConnectionUtility.PASSWORD);
+            if (conn != null) {
+                System.out.println("Connection SUCCESSFULL.");
+            }
+            else {
+                System.out.println("Connection FAILED......Try Again");
+            }
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+        
+    }
+    public static  Connection getConnection() throws Exception {
         Connection conn = null;
         try {
             Class.forName(DBConnectionUtility.mySqlDriver);
