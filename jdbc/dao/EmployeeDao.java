@@ -10,7 +10,7 @@ import jdbc.entity.Employee;
 
 public class EmployeeDao
 {
-    public int insertEmployeeDetails(final Employee employeeObj) throws SQLException, ClassNotFoundException {
+    public int insertEmployeeDetails(final Employee employeeObj) throws Exception {
         final Connection conn = DBConnectionUtility.getConnection();
         final String SQLQuery = "INSERT IGNORE INTO employee VALUES(?,?,?,?)";
         final PreparedStatement pStmt = conn.prepareStatement(SQLQuery);
@@ -24,7 +24,7 @@ public class EmployeeDao
         return rowAffectedStatus;
     }
     
-    public Employee getEmployeeDetailsById(final int id) throws DBConnectionUtilityException {
+    public Employee getEmployeeDetailsById(final int id) throws Exception {
         final Employee employeeObj = new Employee();
         final Connection conn = DBConnectionUtility.getConnection();
         final String SQLQuery = "SELECT * FROM employee WHERE employeeId = ?";
@@ -41,16 +41,16 @@ public class EmployeeDao
             }
         }
         catch (SQLException e) {
-            throw new DBConnectionUtilityException("DAO error");
+            throw new Exception("DAO error");
         }
         return null;
     }
     
-    public int updateEmployeeDetailsByName(final Employee employee, final String s) throws DBConnectionUtilityException {
-        throw new Error("Unresolved compilation problems: \n\tUnhandled exception type SQLException\n\tUnhandled exception type SQLException\n\tUnhandled exception type SQLException\n\tUnhandled exception type SQLException\n\tUnhandled exception type SQLException\n\tUnhandled exception type SQLException\n\tUnhandled exception type SQLException\n\tUnhandled exception type SQLException\n");
+    public int updateEmployeeDetailsByName(final Employee employee, final String s) throws Exception {
+        throw new Exception("abc");
     }
     
-    public int deleteEmployeeDetailsById(final int id) throws SQLException, ClassNotFoundException, DBConnectionUtilityException {
+    public int deleteEmployeeDetailsById(final int id) throws SQLException, ClassNotFoundException,Exception {
         final Connection conn = DBConnectionUtility.getConnection();
         final String SQLQuery = "DELETE FROM employee WHERE employeeId = ?";
         final PreparedStatement pStmt = conn.prepareStatement(SQLQuery);
