@@ -21,7 +21,6 @@ public class DBConnectionUtility
     public static void main(String[] args)  {
          Connection conn = null;
         try {
-            Class.forName(DBConnectionUtility.mySqlDriver);
             conn = DriverManager.getConnection(DBConnectionUtility.URL, DBConnectionUtility.USERNAME, DBConnectionUtility.PASSWORD);
             if (conn != null) {
                 System.out.println("Connection SUCCESSFULL.");
