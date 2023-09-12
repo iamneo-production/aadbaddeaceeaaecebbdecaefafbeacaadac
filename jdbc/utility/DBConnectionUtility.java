@@ -12,7 +12,7 @@ public class DBConnectionUtility
     private static String PASSWORD;
     
     static {
-        DBConnectionUtility.mySqlDriver = "com.mysql.jdbc.Driver";
+       
         DBConnectionUtility.URL = "jdbc:mysql://localhost:3306/appDB?useSSL=false";
         DBConnectionUtility.USERNAME = "root";
         DBConnectionUtility.PASSWORD = "examly";

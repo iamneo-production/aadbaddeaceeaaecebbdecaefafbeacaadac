@@ -23,7 +23,7 @@ public class App
         try {
             conn = DriverManager.getConnection(App.URL, App.USERNAME, App.PASSWORD);
             if (conn != null) {
-                System.out.println("#####################333333333Connection SUCCESSFULL.");
+                System.out.println("####################################Connection SUCCESSFULL.");
             }
             else {
                 System.out.println("Connection FAILED......Try Again");
