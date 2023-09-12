@@ -1,4 +1,4 @@
-package demo1.src.main.java.com.exampl;
+package com.exampl;
 
 /**
  * Hello world!

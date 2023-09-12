@@ -1,4 +1,4 @@
-package demo.src.main.java.com.jdbc;
+package com.jdbc;
 
 
 import java.sql.DriverManager;
@@ -6,7 +6,7 @@ import java.sql.Connection;
 
 public class App
 {
-    private static String mySqlDriver;
+
     private static String URL;
     private static String USERNAME;
     private static String PASSWORD;

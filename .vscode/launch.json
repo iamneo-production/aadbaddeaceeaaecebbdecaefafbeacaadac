@@ -1,6 +1,20 @@
 {
     "configurations": [
         {
+            "type": "java",
+            "name": "DBConnectionUtility",
+            "request": "launch",
+            "mainClass": "jdbc.utility.DBConnectionUtility",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "com.jdbc.App",
+            "projectName": "demo"
+        },
+        {
             "type": "chrome",
             "name": "http://127.0.0.1:3001/trial.html",
             "request": "launch",
