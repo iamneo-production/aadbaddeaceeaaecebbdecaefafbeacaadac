@@ -1,6 +1,108 @@
-<html>
-    <body>
-        <p>Hi</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div#root {
+        border: 2px solid black;
+        margin: 25px 30%;
+        padding: 25px;
+        background-color: red;
+      }
 
-    </body>
+      h2#title {
+        display: flex;
+        justify-content: center;
+        height: 30px;
+      }
+      form#topBox *,
+      #bottomBox * {
+        padding: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        padding: 10px 0px;
+      }
+      div #row1 *,
+      #row2 * {
+        width: 100%;
+      }
+      form#bottomBox * {
+        width: 100%;
+      }
+      .line {
+        border-style: solid;
+        border-top: 1px;
+        border-color: rgb(114, 112, 112);
+      }
+      #fname,
+      #email {
+        margin-right: 10px;
+      }
+      #lname,
+      #mobile {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <h2 id="title">Student Registration</h2>
+      <div id="topBox">
+        <form id="topBox">
+          <div id="row1">
+            <input type="text" id="fname" name="fname" value="First Name" />
+
+            <input type="text" id="lname" name="lname" value="Last Name" />
+          </div>
+
+          <div id="row2">
+            <input type="text" id="email" name="email" value="Email" />
+
+            <input type="text" id="mobile" name="mobile" value="Mobile" />
+          </div>
+          <div id="row3"><input type="text" id="city" name="city" value="City" /></div>
+          <div id="row4">
+            <label for="date1">Date of birth:</label> <input type="date" id="date1" name="date1" value="mm-dd-yyyy" />
+          </div>
+        </form>
+      </div>
+      <div class="line"></div>
+      <div id="radioButtons">
+        <form id="gender">
+          <div>Gender</div>
+          <input type="radio" id="male" name="male" value="Male" />
+          <label for="male">Male</label>
+          <br />
+          <input type="radio" id="female" name="female" value="Female" />
+          <label for="female">Female</label>
+        </form>
+      </div>
+      <div class="line"></div>
+      <div id="checkbox">
+        <form id="hobbies">
+          <div>Hobbies</div>
+          <input type="checkbox" id="cricket" name="cricket" value="Cricket" />
+          <label for="cricket">Cricket</label>
+          <br />
+          <input type="checkbox" id="football" name="football" value="Football" />
+          <label for="football">Football</label>
+          <br />
+          <input type="checkbox" id="chess" name="chess" value="Chess" />
+          <label for="chess">Chess</label>
+        </form>
+      </div>
+      <div class="line"></div>
+      <div id="bottom box">
+        <form id="bottomBox">
+          <div><input type="text" id="password" name="password" value="Password" /></div>
+          <div><input type="submit" id="register" name="register" value="Register" /></div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
