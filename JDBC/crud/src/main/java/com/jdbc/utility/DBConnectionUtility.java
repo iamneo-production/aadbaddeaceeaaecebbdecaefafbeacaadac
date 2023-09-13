@@ -12,7 +12,7 @@ public class DBConnectionUtility
     
     static {
        
-        DBConnectionUtility.URL = "jdbc:mysql://localhost:3306/empDB?useSSL=false";
+        DBConnectionUtility.URL = "jdbc:mysql://localhost:3306/empDB";
         DBConnectionUtility.USERNAME = "root";
         DBConnectionUtility.PASSWORD = "examly";
     }
