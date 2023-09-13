@@ -1,12 +1,12 @@
-package jdbc.dao;
+package com.jdbc.dao;
 
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.PreparedStatement;
 import java.sql.Connection;
-import jdbc.utility.DBConnectionUtility;
-import jdbc.entity.Employee;
+import com.jdbc.utility.DBConnectionUtility;
+import com.jdbc.entity.Employee;
 
 public class EmployeeDao
 {

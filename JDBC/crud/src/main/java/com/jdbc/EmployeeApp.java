@@ -1,10 +1,10 @@
-package jdbc;
+package com.jdbc;
 
 import java.sql.SQLException;
 import java.util.Scanner;
 
-import jdbc.entity.Employee;
-import jdbc.service.EmployeeService;
+import com.jdbc.entity.Employee;
+import com.jdbc.service.EmployeeService;
 
 public class EmployeeApp {
 	public static void main(String args[]) throws Exception {

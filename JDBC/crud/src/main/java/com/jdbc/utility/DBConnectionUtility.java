@@ -1,5 +1,5 @@
 
-package jdbc.utility;
+package com.jdbc.utility;
 
 import java.sql.DriverManager;
 import java.sql.Connection;

@@ -1,4 +1,4 @@
-package jdbc.entity;
+package com.jdbc.entity;
 
 
 public class Employee

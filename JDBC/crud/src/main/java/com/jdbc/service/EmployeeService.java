@@ -1,9 +1,9 @@
-package jdbc.service;
+package com.jdbc.service;
 
 
 import java.sql.SQLException;
-import jdbc.entity.Employee;
-import jdbc.dao.EmployeeDao;
+import com.jdbc.entity.Employee;
+import com.jdbc.dao.EmployeeDao;
 
 public class EmployeeService
 {
