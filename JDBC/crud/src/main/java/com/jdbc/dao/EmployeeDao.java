@@ -11,7 +11,9 @@ import jdbc.entity.Employee;
 public class EmployeeDao
 {
     public int insertEmployeeDetails(final Employee employeeObj) throws Exception {
+        System.out.println("IN DAO");
         final Connection conn = DBConnectionUtility.getConnection();
+        System.out.println("next to conn");
         final String SQLQuery = "INSERT IGNORE INTO employee VALUES(?,?,?,?)";
         final PreparedStatement pStmt = conn.prepareStatement(SQLQuery);
         pStmt.setInt(1, employeeObj.getEmployeeId());
