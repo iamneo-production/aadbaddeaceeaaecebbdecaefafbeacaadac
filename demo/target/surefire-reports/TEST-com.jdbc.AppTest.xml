@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/coder/project/workspace/demo/target/surefire/surefirebooter4650166757989369747.jar /home/coder/project/workspace/demo/target/surefire 2023-09-12T10-33-09_774-jvmRun1 surefire7050282212930401087tmp surefire_09190868254103665566tmp"/>
+    <property name="sun.java.command" value="/home/coder/project/workspace/demo/target/surefire/surefirebooter11496990806035066974.jar /home/coder/project/workspace/demo/target/surefire 2023-09-13T08-50-38_324-jvmRun1 surefire17855971760234999536tmp surefire_06217861266694406537tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/coder/project/workspace/demo/target/test-classes:/home/coder/project/workspace/demo/target/classes:/home/coder/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/home/coder/.m2/repository/com/mysql/mysql-connector-j/8.0.32/mysql-connector-j-8.0.32.jar:/home/coder/.m2/repository/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/coder/project/workspace/demo/target/surefire/surefirebooter4650166757989369747.jar"/>
+    <property name="surefire.real.class.path" value="/home/coder/project/workspace/demo/target/surefire/surefirebooter11496990806035066974.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.20+8-post-Debian-1deb11u1"/>
     <property name="user.name" value="coder"/>
